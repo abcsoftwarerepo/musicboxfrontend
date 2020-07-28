@@ -1,0 +1,41 @@
+//COLOR VARIABLES
+$col1: #2dceef;
+$col2: #2d9bef;
+$col3: #9b2def;
+$c-main-wh: #ffffff;
+$col5: #d5d5d5;
+$col6: #99999f;
+$col7: #424346;
+$col8: #3a3a3d;
+$col9: #303033;
+$c-main-bl: #161a1a;
+$c-dark-bl: #111313;
+$c-gradient: linear-gradient(90deg, rgba(155, 45, 239, 1) 0%, rgba(45, 155, 239, 1) 70%, rgba(53, 237, 251, 1) 100%);
+
+//FONT VARIABLES
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+$ff-pri: "Lato", sans-serif;
+$ff-sec: "Poppins", sans-serif;
+
+$fw-n: 400;
+$fw-b: 600;
+
+$fs-h1: 3rem;
+$fs-h2: 2.25rem;
+$fs-btn: 1rem;
+$fs-txt: 1.25rem;
+$fs-sm-txt: 0.875rem;
+$fs-xsm-txt: 0.75rem;
+
+$flh-main: 2.188rem;
+
+//IMAGE VARIABLES
+$bg-image-main: url(/img/bg-main.svg);
+
+//BUTTON VARIABLES
+$btn-xsm: 10px 32px;
+$btn-sm: 10px 34px;
+$btn-md: 12px 40px;
+$btn-radius-pri: 20px;
+$btn-radius-sec: 40px;
