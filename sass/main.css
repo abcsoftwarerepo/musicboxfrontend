@@ -170,6 +170,10 @@ textarea {
   /* 2 */
 }
 
+button {
+  border: none;
+}
+
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
@@ -350,6 +354,13 @@ ul {
   list-style-type: none;
 }
 
+.g-text {
+  background: -webkit-gradient(linear, left top, right top, from(#9b2def), color-stop(70%, #2d9bef), to(#35edfb));
+  background: linear-gradient(90deg, #9b2def 0%, #2d9bef 70%, #35edfb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .btn-xsm {
   padding: 10px 32px;
 }
@@ -364,11 +375,11 @@ ul {
 
 .button-empty {
   border: 1.5px solid #ffffff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
   color: #ffffff;
   font-weight: 600;
   display: inline-block;
@@ -391,11 +402,11 @@ ul {
 }
 
 .button-filled-g {
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
   color: #ffffff;
   background: -webkit-gradient(linear, left top, right top, from(#9b2def), color-stop(70%, #2d9bef), to(#35edfb));
   background: linear-gradient(90deg, #9b2def 0%, #2d9bef 70%, #35edfb 100%);
@@ -403,6 +414,26 @@ ul {
   display: inline-block;
   text-align: center;
   white-space: nowrap;
+}
+
+.icon-container {
+  background-color: #707070;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  padding: 28px;
+}
+
+.pricing-table {
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 30px;
 }
 
 html,
@@ -414,6 +445,8 @@ body {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -439,46 +472,22 @@ h1 {
   background: url(/img/bg-main.svg);
   display: -ms-grid;
   display: grid;
+  padding: 0 260px;
 }
 
-.header-container .header-title {
+.header-container .header-content {
+  display: -ms-grid;
+  display: grid;
+  grid: 85px 1fr / auto;
+}
+
+.header-container .header-content .header-title {
   font-size: 3rem;
   line-height: 60px;
   padding-bottom: 70px;
 }
 
-.flow-container {
-  background: #161a1a;
-  display: -ms-grid;
-  display: grid;
-}
-
-.banner-container {
-  background: url(/img/bg-banner.svg);
-  display: -ms-grid;
-  display: grid;
-}
-
-.pricing-container {
-  background: #161a1a;
-  display: -ms-grid;
-  display: grid;
-}
-
-.footer-container {
-  background: #111313;
-  display: -ms-grid;
-  display: grid;
-}
-
-.header-content {
-  display: -ms-grid;
-  display: grid;
-  padding: 0 260px;
-  grid: 85px 1fr / auto;
-}
-
-.header-content .navbar-container {
+.header-container .header-content .navbar-container {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -487,7 +496,7 @@ h1 {
           align-items: center;
 }
 
-.header-content .navbar-container ul {
+.header-container .header-content .navbar-container ul {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
@@ -501,12 +510,12 @@ h1 {
           column-gap: 39px;
 }
 
-.header-content .navbar-container ul li {
+.header-container .header-content .navbar-container ul li {
   text-align: center;
   font-weight: 600;
 }
 
-.header-content .header-title-container {
+.header-container .header-content .header-title-container {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -516,13 +525,128 @@ h1 {
       align-content: center;
   text-align: center;
   color: white;
+  row-gap: 20px;
 }
 
-.header-content .header-buttons-container {
+.header-container .header-content .header-buttons-container {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+}
+
+.flow-container {
+  background: #161a1a;
+  display: -ms-grid;
+  display: grid;
+}
+
+.flow-container .flow-content {
+  padding: 0 260px;
+  font-weight: 600;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.flow-container .flow-content-content {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid: auto auto / -webkit-min-content auto;
+  grid: auto auto / min-content auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.flow-container .flow-content-content h1 {
+  font-size: 3rem;
+}
+
+.flow-container .flow-content-content p {
+  font-size: 1.25rem;
+  grid-column: span 2;
+  white-space: pre-line;
+}
+
+.banner-container {
+  background: url(/img/bg-banner.svg);
+  display: -ms-grid;
+  display: grid;
+}
+
+.banner-container .banner-content {
+  padding: 0 260px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 36px;
+  color: #ffffff;
+}
+
+.banner-container .banner-content p {
+  white-space: pre-line;
+}
+
+.pricing-container {
+  background: #161a1a;
+  display: -ms-grid;
+  display: grid;
+}
+
+.pricing-container .pricing-content {
+  padding: 0 260px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.pricing-container .pricing-content .pricing-content-finder {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.pricing-container .pricing-content .pricing-content-premium {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.pricing-container .pricing-content .pricing-content-premium .premium-features {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.pricing-container .pricing-content .pricing-content-premium .premium-pricing-container {
+  display: -ms-grid;
+  display: grid;
+  grid: auto auto / auto auto;
+}
+
+.pricing-container .pricing-content .pricing-content-premium .premium-pricing-container p {
+  grid-column: 1/-1;
+}
+
+.footer-container {
+  background: #111313;
+  display: -ms-grid;
+  display: grid;
 }
 /*# sourceMappingURL=main.css.map */

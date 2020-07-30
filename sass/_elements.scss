@@ -1,0 +1,77 @@
+@import "variables";
+
+.g-text {
+  background: $c-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-xsm {
+  padding: $btn-xsm;
+}
+.btn-sm {
+  padding: $btn-sm;
+}
+.btn-md {
+  padding: $btn-md;
+}
+
+.button-empty {
+  border: 1.5px solid $c-main-wh;
+  border-radius: $btn-radius-sec;
+  -webkit-border-radius: $btn-radius-sec;
+  -moz-border-radius: $btn-radius-sec;
+  -ms-border-radius: $btn-radius-sec;
+  -o-border-radius: $btn-radius-sec;
+  color: $c-main-wh;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+.button-filled-w {
+  border-radius: $btn-radius-pri;
+  -webkit-border-radius: $btn-radius-pri;
+  -moz-border-radius: $btn-radius-pri;
+  -ms-border-radius: $btn-radius-pri;
+  -o-border-radius: $btn-radius-pri;
+  color: $c-main-bl;
+  background-color: $c-main-wh;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+.button-filled-g {
+  border-radius: $btn-radius-sec;
+  -webkit-border-radius: $btn-radius-sec;
+  -moz-border-radius: $btn-radius-sec;
+  -ms-border-radius: $btn-radius-sec;
+  -o-border-radius: $btn-radius-sec;
+  color: $c-main-wh;
+  background: $c-gradient;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.icon-container {
+  background-color: $c-dark-gray;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  padding: 28px;
+}
+
+.pricing-table {
+  border: 3px solid $c-main-wh;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 30px;
+}

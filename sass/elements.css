@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600&display=swap");
+.g-text {
+  background: -webkit-gradient(linear, left top, right top, from(#9b2def), color-stop(70%, #2d9bef), to(#35edfb));
+  background: linear-gradient(90deg, #9b2def 0%, #2d9bef 70%, #35edfb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .btn-xsm {
   padding: 10px 32px;
 }
@@ -13,11 +20,11 @@
 
 .button-empty {
   border: 1.5px solid #ffffff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
   color: #ffffff;
   font-weight: 600;
   display: inline-block;
@@ -40,11 +47,11 @@
 }
 
 .button-filled-g {
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
+  border-radius: 90px;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  -ms-border-radius: 90px;
+  -o-border-radius: 90px;
   color: #ffffff;
   background: -webkit-gradient(linear, left top, right top, from(#9b2def), color-stop(70%, #2d9bef), to(#35edfb));
   background: linear-gradient(90deg, #9b2def 0%, #2d9bef 70%, #35edfb 100%);
@@ -52,5 +59,25 @@
   display: inline-block;
   text-align: center;
   white-space: nowrap;
+}
+
+.icon-container {
+  background-color: #707070;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  padding: 28px;
+}
+
+.pricing-table {
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 30px;
 }
 /*# sourceMappingURL=elements.css.map */

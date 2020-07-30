@@ -13,6 +13,8 @@ body {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -36,59 +38,124 @@ h1 {
 .header-container {
   background: url(/img/bg-main.svg);
   display: grid;
-  .header-title {
-    font-size: $fs-h1;
-    line-height: 60px;
-    padding-bottom: 70px;
+  padding: $gr-padding;
+  .header-content {
+    .header-title {
+      font-size: $fs-h1;
+      line-height: 60px;
+      padding-bottom: 70px;
+    }
+    display: grid;
+
+    grid: 85px 1fr / auto;
+    .navbar-container {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      ul {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: center;
+        column-gap: 39px;
+        li {
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+    .header-title-container {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      color: white;
+      row-gap: 20px;
+    }
+    .header-buttons-container {
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 30px;
+    }
   }
 }
 .flow-container {
   background: $c-main-bl;
   display: grid;
+
+  .flow-content {
+    padding: $gr-padding;
+    font-weight: $fw-b;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    color: $c-main-wh;
+  }
+  .flow-content-content {
+    justify-self: end;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid: auto auto / min-content auto;
+    column-gap: 20px;
+    h1 {
+      font-size: $fs-h1;
+    }
+    p {
+      font-size: $fs-txt;
+      grid-column: span 2;
+      white-space: pre-line;
+    }
+  }
 }
 .banner-container {
   background: url(/img/bg-banner.svg);
   display: grid;
+  .banner-content {
+    padding: $gr-padding;
+    align-self: center;
+    display: grid;
+    row-gap: 36px;
+    color: $c-main-wh;
+    p {
+      white-space: pre-line;
+    }
+  }
 }
 .pricing-container {
   background: $c-main-bl;
   display: grid;
+  .pricing-content {
+    padding: $gr-padding;
+    display: grid;
+
+    .pricing-content-finder {
+      display: grid;
+      grid-auto-flow: column;
+      .pricing-content-content {
+      }
+    }
+
+    .pricing-content-premium {
+      display: grid;
+      align-items: center;
+      color: $c-main-wh;
+      .premium-features {
+        display: grid;
+        grid-auto-flow: column;
+      }
+      .premium-pricing-container {
+        display: grid;
+        grid: auto auto / auto auto;
+
+        p {
+          grid-column: 1/-1;
+        }
+      }
+    }
+  }
 }
 .footer-container {
   background: $c-dark-bl;
   display: grid;
-}
-
-.header-content {
-  display: grid;
-  padding: 0 260px;
-  grid: 85px 1fr / auto;
-  .navbar-container {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    ul {
-      display: grid;
-      grid-auto-flow: column;
-      align-items: center;
-      justify-content: center;
-      column-gap: 39px;
-      li {
-        text-align: center;
-        font-weight: 600;
-      }
-    }
-  }
-  .header-title-container {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    color: white;
-  }
-  .header-buttons-container {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 30px;
-  }
 }
